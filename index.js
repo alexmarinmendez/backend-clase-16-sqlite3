@@ -1,5 +1,5 @@
-import options from './sqlite.config.js'
-import knex from 'knex'
+import options from './sqlite.config.js';
+import knex from 'knex';
 
 const database = knex(options)
 
@@ -7,6 +7,7 @@ const articulos = [
     { nombre: "Papas", codigo: "1092", precio: 12.34, stock: 100 },
     { nombre: "Bebida", codigo: "1093", precio: 45.4, stock: 90 },
     { nombre: "Hamburguesa", codigo: "1094", precio: 76.2, stock: 80 },
+    { nombre: "Soda", codigo: "900", precio: 2.5, stock: 10 },
 ]
 
 const processDatabase = async() => {
